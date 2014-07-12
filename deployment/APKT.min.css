@@ -1,0 +1,94 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0}
+html{line-height:1}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+caption,td,th{text-align:left;font-weight:400;vertical-align:middle}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}
+a img{border:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+*{color:#0022b4;border-color:#0022b4;font-size:1em;font-family:"Source Sans Pro",sans-serif;line-height:1.5}
+body{background-color:#fff}
+h1{width:80%;color:#ffc82d;background-color:#0022b4;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h2{width:75%;color:#ffc82d;background-color:#0022b4;font-weight:700;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h3{width:70%;color:#ffc82d;background-color:#0022b4;font-weight:700;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h4{width:65%;color:#ffc82d;background-color:#0022b4;font-weight:700;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h5{width:60%;color:#ffc82d;background-color:#0022b4;font-weight:700;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h6{width:55%;color:#ffc82d;background-color:#0022b4;font-weight:700;font-variant:small-caps;margin:.5em auto;padding:.5em}
+h1{text-align:center;font-size:2.75em;font-weight:900;line-height:3}
+h2{text-align:center;font-size:1.25em}
+sub{vertical-align:sub;font-size:75%}
+input,select,textarea{color:#0022b4;background-color:#fff;margin:.125em;padding:.125em;border-style:solid;border-width:2px;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+dl{overflow:hidden;*zoom:1}
+dt{float:left;clear:left;text-align:right}
+.ValueBlock{display:inline-block;vertical-align:top}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{background-color:#fff9ea;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAGJQAABiUBMqobTgAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAsSURBVBhXY/j//789EMMAiM0AEoQBsACIhgnCBUAcGAMuAAIgDorA////7QHyZVcip7QasAAAAABJRU5ErkJggg==);background-repeat:repeat;border-color:#e8000d;border-style:ridge}
+.ValueBlock dt{height:3em;line-height:3;font-size:1.5em}
+.ValueBlock dt::after{content:":"}
+.ValueBlock dd{height:3em;line-height:3;font-size:1.5em}
+.ValueBlock dd input{width:5em}
+.ValueBlock dd select{width:7.5em}
+.ValueBlock dd input,.ValueBlock dd select{height:1.875em}
+.Untouched{background-color:#f2a980}
+body.InitialMode .HideInInitialMode,body.PeakTroughMode .HideInPeakTroughMode,body.ZaskeMode .HideInZaskeMode{display:none}
+.HighlightIfDosingWeightShouldBeActualWeight,.HighlightIfDosingWeightShouldBeActualWeight span,.HighlightIfDosingWeightShouldBeAdjustedWeight,.HighlightIfDosingWeightShouldBeAdjustedWeight span,.HighlightIfDosingWeightShouldBeIdealWeight,.HighlightIfDosingWeightShouldBeIdealWeight span{color:rgba(0,34,180,.5)}
+body.DosingWeightShouldBeActualWeight .HighlightIfDosingWeightShouldBeActualWeight,body.DosingWeightShouldBeActualWeight .HighlightIfDosingWeightShouldBeActualWeight span,body.DosingWeightShouldBeAdjustedWeight .HighlightIfDosingWeightShouldBeAdjustedWeight,body.DosingWeightShouldBeAdjustedWeight .HighlightIfDosingWeightShouldBeAdjustedWeight span,body.DosingWeightShouldBeIdealWeight .HighlightIfDosingWeightShouldBeIdealWeight,body.DosingWeightShouldBeIdealWeight .HighlightIfDosingWeightShouldBeIdealWeight span{color:#0022b4}
+body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWeight,body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjustedWeight,body.DosingWeightShouldBeIdealWeight dt.HighlightIfDosingWeightShouldBeIdealWeight{font-weight:700}
+.ui-datepicker{background:#fff;border-color:#0022b4;width:20em;min-width:50%;max-width:95%}
+.ui-datepicker dl{overflow:hidden;*zoom:1}
+.ui-datepicker dl dt{clear:left}
+.ui-datepicker dl dd{float:left;margin:3px 2%;width:96%}
+.ui-datepicker .ui-slider{background:#ffc82d}
+.ui-datepicker .ui-slider a{background:#0022b4;border-color:rgba(0,34,180,.5)}
+.ui-datepicker .ui-widget-header{border:none}
+.ui-datepicker .ui-widget-content{border-color:#0022b4}
+.ui-datepicker .ui-datepicker-buttonpane{border:none;margin:0}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{display:none}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close{color:#0022b4}
+.ui-datepicker .ui-tpicker-grid-label td{font-size:75%}
+.ui-datepicker .ui-slider .ui-slider-handle{width:4px;margin-left:-2px}
+input[type=time]::-webkit-clear-button,input[type=time]::-webkit-inner-spin-button{display:none}
+#QRCode{text-align:center}
+#QRCode :only-child{margin:1.5em auto}
+#Disclaimers{background:#fff}
+#Disclaimers p{color:rgba(0,34,180,.5)}
+#Disclaimers .DisclaimerEmphasis{color:#a55121}
+@media only screen{h1,h2,h3,h4,h5,h6{-webkit-border-radius:.25em;-moz-border-radius:.25em;-ms-border-radius:.25em;-o-border-radius:.25em;border-radius:.25em}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{-webkit-border-radius:1em;-moz-border-radius:1em;-ms-border-radius:1em;-o-border-radius:1em;border-radius:1em}}
+@media screen{input,select,textarea{padding:.125em}
+.ValueBlock{margin:0 .125em 2em;width:29em}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{margin:.5em auto;border-width:3px;padding:.375em;width:28em}
+.ValueBlock dt{margin-right:.75em;width:8em;min-width:8em}
+.ValueBlock dd{margin-left:8.75em}
+#ValueBlocks{padding:0 .25em}
+.InputPrint,.PrintOnly{display:none}}
+@media screen and (max-width:1479px){.ValueBlock{margin-bottom:1.5em;width:28em}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{border-width:2px;width:27em}}
+@media screen and (max-width:1403px){.ValueBlock{margin:0 1% 1.25em;width:47.5%}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{width:100%}
+.ValueBlock dt{margin-right:2.5%;width:37.5%}
+.ValueBlock dd{margin-left:40%}
+#ValueBlocks{padding:0 1.25% 0 .75%}}
+@media screen and (max-width:939px){.ValueBlock{margin:0 0 1.25em;width:96%}}
+@media screen and (max-width:719px){input,select,textarea{padding:0 .125em}
+.ValueBlock{margin:0 0 1em}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{font-size:.75em;margin:.25em auto;padding:.5em}
+.ValueBlock dt{margin-right:2.5%;width:37.5%;min-width:8em;height:1.96875em;line-height:1.875}
+.ValueBlock dd{margin-left:40%;height:1.96875em;line-height:1.875}
+.ValueBlock dd input,.ValueBlock dd select{height:1.40625em}}
+@media screen and (max-width:639px){.ValueBlock .ValueBlockProper,.ValueBlock dl{border-left-width:0;border-right-width:0}
+#ValueBlocks{padding:0 2px}}
+@media screen and (max-width:479px){.ValueBlock .ValueBlockProper,.ValueBlock dl{border-width:0}
+#ValueBlocks{padding:0 1px}}
+@media print{@page{margin:1cm}
+*{color:#000!important;border-color:#000!important;background-color:#fff}
+body,h1,h2,h3{font-size:8pt;background-color:#fff}
+sub{vertical-align:baseline;position:relative;bottom:-.6em;font-size:62.5%}
+.HideInPrint,.ui-datepicker-div,input,select,textarea{display:none}
+.InputPrint{display:inline;padding-left:.5em;padding-right:.5em;border-style:solid;border-bottom-width:1pt}
+.ValueBlock{margin:.5em;width:20.5em}
+.ValueBlock .ValueBlockProper,.ValueBlock dl{background:#fff;margin:0;border-width:1pt;padding:.75em .5em;width:20em}
+.ValueBlock dt{margin-right:.5em;width:7em;height:16.5pt;line-height:1.5}
+.ValueBlock dd{margin-left:7.5em;height:16.5pt;line-height:1.5}
+#ValueBlocks{-webkit-column-width:21.5em;-moz-column-width:21.5em;-ms-column-width:21.5em;-o-column-width:21.5em;column-width:21.5em;-webkit-column-gap:.75em;-moz-column-gap:.75em;-ms-column-gap:.75em;-o-column-gap:.75em;column-gap:.75em}
+#QRCode{border:none}}

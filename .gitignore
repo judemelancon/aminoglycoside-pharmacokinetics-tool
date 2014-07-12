@@ -1,0 +1,22 @@
+.sass-cache/
+src/*.css
+src/*.min.*
+# Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+# OSX junk
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must ends with two \r.
+Icon
+._*
+.Spotlight-V100
+.Trashes

@@ -1,0 +1,471 @@
+// Licensing details are in the source of the HTML file.
+// configuration
+$debug-layout: false;
+// layout variables
+$font-size: 1em;
+$line-height-scalar: 1.5;
+$line-height-value: $line-height-scalar*$font-size;
+// imports
+@import "compass/reset/utilities";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+@import "compass/css3/columns";
+@import "compass/css3/inline-block";
+@import "compass/utilities/general/clearfix";
+@import "Colors";
+
+// reset
+// This is identical to the default from @import "compass/reset" except for what's commented out.
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  @include reset-box-model;
+  //@include reset-font; // This makes Chrome ignore font stacks and use Times New Roman.
+}
+html {
+  @include reset-body;
+}
+ol, ul {
+  @include reset-list-style;
+}
+table {
+  @include reset-table;
+}
+caption, th, td {
+  @include reset-table-cell;
+}
+q, blockquote {
+  @include reset-quotation;
+}
+a img {
+  @include reset-image-anchor-border;
+}
+@include reset-html5;
+// end reset
+
+* {
+  color: $color-foreground;
+  border-color: $color-foreground;
+  font: {
+    size: $font-size;
+    family: "Source Sans Pro", sans-serif;
+  }
+  line-height: $line-height-scalar;
+}
+body {
+  background-color: $color-background;
+}
+// headers
+@for $level from 1 through 6 {
+  h#{$level} {
+    width: 85% - $level*5%;
+    color: $color-detail;
+    background-color: $color-accent;
+    font: {
+      weight: bold;
+      variant: small-caps;
+    }
+    margin: 0.5em auto 0.5em auto;
+    padding: 0.5em;
+  }
+}
+h1 {
+  text-align: center;
+  font: {
+    size: 2*$line-height-value - 0.25*$font-size;
+    weight: 900;
+  }
+  line-height: 2*$line-height-scalar;
+}
+h2 {
+  text-align: center;
+  font-size: $line-height-value - 0.25*$font-size;
+}
+// general elements
+sub {
+  vertical-align: sub;
+  font-size: 75%;
+}
+// forms
+input, select, textarea {
+  color: $color-input-foreground;
+  background-color: $color-input-background;
+  margin: 0.125em;
+  padding: 0.125em;
+  border: {
+    style: solid;
+    width: 2px;
+  }
+  @include box-sizing(content-box);
+}
+// definition list
+dl {
+  @include clearfix;
+}
+dt {
+  float: left;
+  clear: left;
+  text-align: right;
+}
+// specific classes
+.ValueBlock {
+  display: inline-block;
+  vertical-align: top;
+  dl, .ValueBlockProper {
+    background: {
+      color: mix(white,$color-detail,90%);
+      image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAGJQAABiUBMqobTgAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAsSURBVBhXY/j//789EMMAiM0AEoQBsACIhgnCBUAcGAMuAAIgDorA////7QHyZVcip7QasAAAAABJRU5ErkJggg==);
+      repeat: repeat;
+    }
+    border: {
+      color: $color-trim;
+      style: ridge;
+    }
+  }
+  dt {
+    height: 2*$line-height-value;
+    line-height: 2*$line-height-scalar;
+    font-size: $line-height-value;
+    @if $debug-layout {
+      background-color: rgba(0, 0, 255, 0.125);
+    }
+    &::after {
+      content: ":";
+    }
+  }
+  dd {
+    height: 2*$line-height-value;
+    line-height: 2*$line-height-scalar;
+    font-size: $line-height-value;
+    @if $debug-layout {
+      background-color: rgba(255, 0, 0, 0.125);
+    }
+    input {
+      width: 5em;
+    }
+    select {
+      width: 7.5em;
+    }
+    input, select {
+      height: 1.25*$line-height-value;
+    }
+  }
+}
+.Untouched {
+  background-color: $color-warn;
+}
+
+body.InitialMode .HideInInitialMode {
+  display: none;
+}
+body.PeakTroughMode .HideInPeakTroughMode {
+  display: none;
+}
+body.ZaskeMode .HideInZaskeMode {
+  display: none;
+}
+
+.HighlightIfDosingWeightShouldBeActualWeight, .HighlightIfDosingWeightShouldBeIdealWeight, .HighlightIfDosingWeightShouldBeAdjustedWeight {
+  color: $color-faded;
+  span {
+    color: $color-faded;
+  }
+}
+body.DosingWeightShouldBeActualWeight .HighlightIfDosingWeightShouldBeActualWeight,
+body.DosingWeightShouldBeIdealWeight .HighlightIfDosingWeightShouldBeIdealWeight,
+body.DosingWeightShouldBeAdjustedWeight .HighlightIfDosingWeightShouldBeAdjustedWeight {
+  color: $color-foreground;
+  span {
+    color: $color-foreground;
+  }
+}
+body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWeight,
+body.DosingWeightShouldBeIdealWeight dt.HighlightIfDosingWeightShouldBeIdealWeight,
+body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjustedWeight {
+  font-weight: bold;
+}
+
+.ui-datepicker {
+  background: $color-background;
+  border-color: $color-foreground;
+  width: 20em;
+  min-width: 50%;
+  max-width: 95%;
+  dl {
+    @include clearfix;
+    dt {
+      clear: left;
+    }
+    dd {
+      float: left;
+      margin: 3px 2%;
+      width: 96%;
+    }
+  }
+  .ui-slider {
+    background: $color-detail;
+    a {
+      background: $color-foreground;
+      border-color: transparentize($color-foreground,0.5);
+    }
+  }
+  .ui-widget-header {
+    border: none;
+  }
+  .ui-widget-content {
+    border-color: $color-foreground;
+  }
+  .ui-datepicker-buttonpane {
+    border: none;
+    margin: 0;
+    button.ui-datepicker-current {
+      display: none;
+    }
+    button.ui-datepicker-close {
+      color: $color-foreground;
+    }
+  }
+  .ui-tpicker-grid-label td {
+    font-size: 75%;
+  }
+  .ui-slider .ui-slider-handle {
+    $time-slider-handle-width: 4px;
+    width: $time-slider-handle-width;
+    margin-left: -$time-slider-handle-width/2;
+  }
+}
+
+input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin-button {
+  display:none;
+}
+
+#QRCode {
+  text-align: center;
+  *:only-child {
+    margin: 1.5em auto;
+  }
+}
+#Disclaimers {
+  background: $color-background;
+  p {
+    color: $color-faded;
+  }
+  .DisclaimerEmphasis {
+    color: $color-alert;
+  }
+}
+
+@media only screen {
+  @for $level from 1 through 6 {
+    h#{$level} {
+      @include border-radius(0.25em);
+    }
+  }
+  .ValueBlock {
+    dl, .ValueBlockProper {
+      @include border-radius(1em);
+    }
+  }
+}
+@media screen {
+  $dt-min-width: 8em;
+  $dt-width: $dt-min-width;
+  $dt-margin-right: 0.75em;
+
+  input, select, textarea {
+    padding: 0.125em;
+  }
+  .ValueBlock {
+    margin: 0 0.125em 2em;
+    width: 29em; // ~464px
+    dl, .ValueBlockProper {
+      margin: 0.5em auto;
+      border-width: 3px;
+      padding: 0.375em;
+      width: 28em;
+    }
+    dt {
+      margin-right: $dt-margin-right;
+      width: $dt-width;
+      min-width: $dt-min-width;
+    }
+    dd {
+      margin-left: $dt-width + $dt-margin-right;
+    }
+  }
+  #ValueBlocks {
+    padding: 0 0.25em;
+  }
+  .InputPrint, .PrintOnly {
+    display: none;
+  }
+
+  @media (max-width:1479px) {
+    .ValueBlock {
+      margin-bottom: 1.5em;
+      width: 28em; // ~448px
+      dl, .ValueBlockProper {
+        border-width: 2px;
+        width: 27em;
+      }
+    }
+  }
+
+  @media (max-width:1403px) { // 2 column space filling; 3*464 + safety of 12 - 1
+    $dt-width: 37.5%;
+    $dt-margin-right: 2.5%;
+
+    .ValueBlock {
+      margin: 0 1% 1.25em;
+      width: 47.5%;
+      dl, .ValueBlockProper {
+        width: 100%;
+      }
+      dt {
+        margin-right: $dt-margin-right;
+        width: $dt-width;
+      }
+      dd {
+        margin-left: $dt-width + $dt-margin-right;
+      }
+    }
+    #ValueBlocks {
+      padding: 0 1.25% 0 0.75%;
+    }
+  }
+
+  @media (max-width:939px) { // 1 column space filling; 2*464 + safety of 12 - 1
+    .ValueBlock {
+      margin: 0 0 1.25em;
+      width: 96%;
+    }
+  }
+
+  @media (max-width:719px) { // space saving
+    $font-size: 0.75em;
+    $line-height-value: $line-height-scalar*$font-size;
+
+    input, select, textarea {
+      padding: 0 0.125em;
+    }
+    .ValueBlock {
+      margin: 0 0 1em;
+      dl, .ValueBlockProper {
+        font-size: $font-size;
+        margin: 0.25em auto;
+        padding: 0.5em;
+      }
+      dt {
+        margin-right: $dt-margin-right;
+        width: $dt-width;
+        min-width: $dt-min-width;
+        height: 1.75*$line-height-value;
+        line-height: 1.25*$line-height-scalar;
+      }
+      dd {
+        margin-left: $dt-width + $dt-margin-right;
+        height: 1.75*$line-height-value;
+        line-height: 1.25*$line-height-scalar;
+        input, select {
+          height: 1.25*$line-height-value;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .ValueBlock {
+      dl, .ValueBlockProper {
+      border-left-width: 0;
+      border-right-width: 0;
+      }
+    }
+    #ValueBlocks {
+      padding: 0 2px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .ValueBlock {
+      dl, .ValueBlockProper {
+        border-width: 0;
+      }
+    }
+    #ValueBlocks {
+      padding: 0 1px;
+    }
+  }
+}
+
+@media print {
+  $font-size: 8pt;
+  $line-height-value: $line-height-scalar*$font-size;
+  $dt-width: 7em;
+  $dt-margin-right: 0.5em;
+
+  @page {
+    margin: 1cm;
+  }
+  * {
+    color: $color-print-foreground !important;
+    border-color: $color-print-foreground !important;
+    background-color: $color-print-background;
+  }
+  body, h1, h2, h3 {
+    font-size: $font-size;
+    background-color: $color-print-background;
+  }
+  sub {
+    vertical-align: baseline;
+    position: relative;
+    bottom: -0.6em;
+    font-size: 62.5%;
+  }
+  input, select, textarea {
+    display: none;
+  }
+  .HideInPrint, .ui-datepicker-div {
+    display: none;
+  }
+  .InputPrint {
+    display: inline;
+    padding: {
+      left: 0.5em;
+      right: 0.5em;
+    }
+    border: {
+      style: solid;
+      bottom-width: 1pt;
+    }
+  }
+  .ValueBlock {
+    margin: 0.5em;
+    width: 20.5em;
+    dl, .ValueBlockProper {
+      background: $color-print-background;
+      margin: 0 ;
+      border-width: 1pt;
+      padding: 0.75em 0.5em;
+      width: 20.0em;
+    }
+    dt {
+      margin-right: $dt-margin-right;
+      width: $dt-width;
+      height: 1.375*$line-height-value;
+      line-height: $line-height-scalar;
+    }
+    dd {
+      margin-left: $dt-width + $dt-margin-right;
+      height: 1.375*$line-height-value;
+      line-height: $line-height-scalar;
+    }
+  }
+  #ValueBlocks {
+    @include column-width(21.5em);
+    @include column-gap(0.75em);
+  }
+  #QRCode {
+    border: none;
+  }
+}

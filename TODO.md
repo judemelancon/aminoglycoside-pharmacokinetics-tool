@@ -1,0 +1,1 @@
+Implement automatic fallback between multiple CDNs.
