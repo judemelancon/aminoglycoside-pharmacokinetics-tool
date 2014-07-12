@@ -1,0 +1,33 @@
+// Licensing details are in the source of the HTML file.
+// These KU color variables ( http://www.identity.ku.edu/colors/ ) are only used to set the default theme color variables below.
+$ku-blue: #0022b4;
+$signature-gray: #85898a;
+$ku-crimson: #e8000d;
+$jayhawk-yellow: #ffc82d;
+$sky-blue: #6dc6e7;
+$marina: #004065;
+$obsidian: #021e2f;
+$gold: #f4aa00;
+$orange: #e55302;
+$brick: #7a2531;
+$terra-cotta: #a55121;
+$brown: #59452a;
+$smoke: #51626f;
+$light-stone: #b1b0a7;
+$khaki: #aba48f;
+$sand: #dad6cb;
+$green: #008444;
+// These theme color variables are used by the main CSS file.
+$color-foreground: $ku-blue;
+$color-background: white;
+$color-accent: $ku-blue;
+$color-detail: $jayhawk-yellow;
+$color-trim: $ku-crimson;
+$color-input-foreground: $color-foreground;
+$color-input-background: white;
+$color-faded: transparentize(desaturate($color-foreground,0.5),0.5);
+$color-alert: $terra-cotta;
+$color-warn: mix(white,$orange);
+$color-error: $brick;
+$color-print-foreground: black;
+$color-print-background: white;
