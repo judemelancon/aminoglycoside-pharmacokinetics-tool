@@ -1,0 +1,184 @@
+// imports
+@import "compass/reset/utilities";
+@import "compass/css3/border-radius";
+@import "compass/utilities/general/clearfix";
+@import "Colors";
+
+// reset
+// This is identical to the default from @import "compass/reset" except for what's commented out.
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  @include reset-box-model;
+  //@include reset-font; // This makes Chrome ignore font stacks and use Times New Roman.
+}
+html {
+  @include reset-body;
+}
+ol, ul {
+  @include reset-list-style;
+}
+table {
+  @include reset-table;
+}
+caption, th, td {
+  @include reset-table-cell;
+}
+q, blockquote {
+  @include reset-quotation;
+}
+a img {
+  @include reset-image-anchor-border;
+}
+@include reset-html5;
+// end reset
+
+body {
+  color: $color-foreground;
+  border-color: $color-foreground;
+  background-color: $color-background;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  color: $color-foreground;
+}
+// headers
+@for $level from 1 through 6 {
+  h#{$level} {
+    width: 80% - $level*10%;
+    color: $color-detail;
+    background-color: $color-accent;
+    font: {
+      weight: bold;
+      variant: small-caps;
+    }
+    margin: 0.5em auto 0.5em auto;
+    padding: 0.5em;
+  }
+}
+h1 {
+  text-align: center;
+  font: {
+    size: 200%;
+    weight: 900;
+  }
+}
+h2 {
+  text-align: center;
+  font-size: 150%;
+}
+header, section, footer {
+  text-align: center;
+  * {
+    margin: 1em auto;
+  }
+}
+footer {
+  color: $color-faded;
+  a {
+    color: $color-faded;
+  }
+}
+// specific classes
+.MenuBoxes {
+  list-style: none;
+  display: inline-block;
+  margin: 1em auto;
+  @include clearfix;
+  li {
+    background-color: mix(white,$color-detail,75%);
+    display: inline-block;
+    margin: 0.75em;
+    border: {
+      width: 1px;
+      color: $color-detail;
+      style: solid;
+    }
+    padding: 0.5em;
+    width: 5em;
+    height: 2.5em;
+    text-align: center;
+    strong {
+      font-size: 125%;
+      font-weight: 900;
+      &.Monoword {
+        font-size: 225%;
+      }
+    }
+  }
+}
+.Sidebar {
+  float: right;
+  margin-right: 5%;
+  text-align: center;
+}
+.ValueBlockMimic {
+  background: {
+    color: mix(white,$color-detail,90%);
+    image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAGJQAABiUBMqobTgAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAsSURBVBhXY/j//789EMMAiM0AEoQBsACIhgnCBUAcGAMuAAIgDorA////7QHyZVcip7QasAAAAABJRU5ErkJggg==);
+    repeat: repeat;
+  }
+  margin: 2em auto;
+  border: {
+    width: 3px;
+    color: $color-trim;
+    style: ridge;
+  }
+  padding: 1em;
+  width: 24em;
+  text-align: center;
+  * {
+    margin: 1em auto;
+  }
+  a {
+    color: $color-trim;
+  }
+}
+
+@media screen {
+  @for $level from 1 through 6 {
+    h#{$level} {
+      @include border-radius(0.25em);
+    }
+  }
+  .MenuBoxes li {
+    @include border-radius(0.5em);
+  }
+  .ValueBlockMimic {
+    @include border-radius(1em);
+  }
+
+  @media (max-width:1550px) {
+    .Sidebar {
+      float: none;
+      margin: {
+        left: 5%;
+        right: 5%;
+      }
+      width: 90%;
+    }
+  }
+
+  @media (max-width:450px) {
+    .ValueBlockMimic {
+      border-width: 1px;
+      padding: 2%;
+      width: 90%;
+    }
+  }
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  * {
+    color: $color-print-foreground !important;
+    border-color: $color-print-foreground !important;
+    background-color: $color-print-background !important;
+  }
+  .ValueBlockMimic {
+    border-width: 1pt;
+  }
+}

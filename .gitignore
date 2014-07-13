@@ -1,6 +1,4 @@
 .sass-cache/
-src/*.css
-src/*.min.*
 # Windows junk
 Thumbs.db
 ehthumbs.db
