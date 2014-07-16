@@ -16,8 +16,8 @@ $(document).ready(function() {
                              hasher.changed.active = false;
                              hasher.setHash(value);
                              hasher.changed.active = true;
-                             $('#QRCode').qrcode({
-                                                    render: 'canvas',
+                             $('#QRCode').empty()
+                                         .qrcode({
                                                     width: 200,
                                                     height: 200,
                                                     text: window.location.href
