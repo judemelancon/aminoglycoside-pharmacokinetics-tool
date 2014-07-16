@@ -47,7 +47,6 @@ body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWe
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close{color:#0022b4}
 .ui-datepicker .ui-tpicker-grid-label td{font-size:75%}
 .ui-datepicker .ui-slider .ui-slider-handle{width:4px;margin-left:-2px}
-input[type=time]::-webkit-clear-button,input[type=time]::-webkit-inner-spin-button{display:none}
 #QRCode{text-align:center}
 #QRCode :only-child{margin:1.5em auto}
 #Disclaimers{background:#fff}

@@ -236,10 +236,6 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
   }
 }
 
-input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin-button {
-  display:none;
-}
-
 #QRCode {
   text-align: center;
   *:only-child {

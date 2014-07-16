@@ -279,28 +279,24 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     margin-left: -2px; }
 
 /* line 239, APKT.scss */
-input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin-button {
-  display: none; }
-
-/* line 243, APKT.scss */
 #QRCode {
   text-align: center; }
-  /* line 245, APKT.scss */
+  /* line 241, APKT.scss */
   #QRCode *:only-child {
     margin: 1.5em auto; }
 
-/* line 249, APKT.scss */
+/* line 245, APKT.scss */
 #Disclaimers {
   background: white; }
-  /* line 251, APKT.scss */
+  /* line 247, APKT.scss */
   #Disclaimers p {
     color: rgba(0, 34, 180, 0.5); }
-  /* line 254, APKT.scss */
+  /* line 250, APKT.scss */
   #Disclaimers .DisclaimerEmphasis {
     color: #a55121; }
 
 @media only screen {
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h1 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -308,7 +304,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h2 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -316,7 +312,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h3 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -324,7 +320,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h4 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -332,7 +328,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h5 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -340,7 +336,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 261, APKT.scss */
+  /* line 257, APKT.scss */
   h6 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -348,7 +344,7 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 266, APKT.scss */
+  /* line 262, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -356,145 +352,145 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-border-radius: 1em;
     border-radius: 1em; } }
 @media screen {
-  /* line 276, APKT.scss */
+  /* line 272, APKT.scss */
   input, select, textarea {
     padding: 0.125em; }
 
-  /* line 279, APKT.scss */
+  /* line 275, APKT.scss */
   .ValueBlock {
     margin: 0 0.125em 2em;
     width: 29em; }
-    /* line 282, APKT.scss */
+    /* line 278, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       margin: 0.5em auto;
       border-width: 3px;
       padding: 0.375em;
       width: 28em; }
-    /* line 288, APKT.scss */
+    /* line 284, APKT.scss */
     .ValueBlock dt {
       margin-right: 0.75em;
       width: 8em;
       min-width: 8em; }
-    /* line 293, APKT.scss */
+    /* line 289, APKT.scss */
     .ValueBlock dd {
       margin-left: 8.75em; }
 
-  /* line 297, APKT.scss */
+  /* line 293, APKT.scss */
   #ValueBlocks {
     padding: 0 0.25em; }
 
-  /* line 300, APKT.scss */
+  /* line 296, APKT.scss */
   .InputPrint, .PrintOnly {
     display: none; } }
 @media screen and (max-width: 1479px) {
-  /* line 305, APKT.scss */
+  /* line 301, APKT.scss */
   .ValueBlock {
     margin-bottom: 1.5em;
     width: 28em; }
-    /* line 308, APKT.scss */
+    /* line 304, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       border-width: 2px;
       width: 27em; } }
 @media screen and (max-width: 1403px) {
-  /* line 319, APKT.scss */
+  /* line 315, APKT.scss */
   .ValueBlock {
     margin: 0 1% 1.25em;
     width: 47.5%; }
-    /* line 322, APKT.scss */
+    /* line 318, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       width: 100%; }
-    /* line 325, APKT.scss */
+    /* line 321, APKT.scss */
     .ValueBlock dt {
       margin-right: 2.5%;
       width: 37.5%; }
-    /* line 329, APKT.scss */
+    /* line 325, APKT.scss */
     .ValueBlock dd {
       margin-left: 40%; }
 
-  /* line 333, APKT.scss */
+  /* line 329, APKT.scss */
   #ValueBlocks {
     padding: 0 1.25% 0 0.75%; } }
 @media screen and (max-width: 939px) {
-  /* line 339, APKT.scss */
+  /* line 335, APKT.scss */
   .ValueBlock {
     margin: 0 0 1.25em;
     width: 96%; } }
 @media screen and (max-width: 719px) {
-  /* line 349, APKT.scss */
+  /* line 345, APKT.scss */
   input, select, textarea {
     padding: 0 0.125em; }
 
-  /* line 352, APKT.scss */
+  /* line 348, APKT.scss */
   .ValueBlock {
     margin: 0 0 1em; }
-    /* line 354, APKT.scss */
+    /* line 350, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       font-size: 0.75em;
       margin: 0.25em auto;
       padding: 0.5em; }
-    /* line 359, APKT.scss */
+    /* line 355, APKT.scss */
     .ValueBlock dt {
       margin-right: 2.5%;
       width: 37.5%;
       min-width: 8em;
       height: 1.96875em;
       line-height: 1.875; }
-    /* line 366, APKT.scss */
+    /* line 362, APKT.scss */
     .ValueBlock dd {
       margin-left: 40%;
       height: 1.96875em;
       line-height: 1.875; }
-      /* line 370, APKT.scss */
+      /* line 366, APKT.scss */
       .ValueBlock dd input, .ValueBlock dd select {
         height: 1.40625em; } }
 @media screen and (max-width: 639px) {
-  /* line 379, APKT.scss */
+  /* line 375, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     border-left-width: 0;
     border-right-width: 0; }
 
-  /* line 384, APKT.scss */
+  /* line 380, APKT.scss */
   #ValueBlocks {
     padding: 0 2px; } }
 @media screen and (max-width: 479px) {
-  /* line 391, APKT.scss */
+  /* line 387, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     border-width: 0; }
 
-  /* line 395, APKT.scss */
+  /* line 391, APKT.scss */
   #ValueBlocks {
     padding: 0 1px; } }
 @media print {
   @page {
     margin: 1cm; }
 
-  /* line 410, APKT.scss */
+  /* line 406, APKT.scss */
   * {
     color: black !important;
     border-color: black !important;
     background-color: white; }
 
-  /* line 415, APKT.scss */
+  /* line 411, APKT.scss */
   body, h1, h2, h3 {
     font-size: 8pt;
     background-color: white; }
 
-  /* line 419, APKT.scss */
+  /* line 415, APKT.scss */
   sub {
     vertical-align: baseline;
     position: relative;
     bottom: -0.6em;
     font-size: 62.5%; }
 
-  /* line 425, APKT.scss */
+  /* line 421, APKT.scss */
   input, select, textarea {
     display: none; }
 
-  /* line 428, APKT.scss */
+  /* line 424, APKT.scss */
   .HideInPrint, .ui-datepicker-div {
     display: none; }
 
-  /* line 431, APKT.scss */
+  /* line 427, APKT.scss */
   .InputPrint {
     display: inline;
     padding-left: 0.5em;
@@ -502,30 +498,30 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     border-style: solid;
     border-bottom-width: 1pt; }
 
-  /* line 442, APKT.scss */
+  /* line 438, APKT.scss */
   .ValueBlock {
     margin: 0.5em;
     width: 20.5em; }
-    /* line 445, APKT.scss */
+    /* line 441, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       background: white;
       margin: 0;
       border-width: 1pt;
       padding: 0.75em 0.5em;
       width: 20.0em; }
-    /* line 452, APKT.scss */
+    /* line 448, APKT.scss */
     .ValueBlock dt {
       margin-right: 0.5em;
       width: 7em;
       height: 16.5pt;
       line-height: 1.5; }
-    /* line 458, APKT.scss */
+    /* line 454, APKT.scss */
     .ValueBlock dd {
       margin-left: 7.5em;
       height: 16.5pt;
       line-height: 1.5; }
 
-  /* line 464, APKT.scss */
+  /* line 460, APKT.scss */
   #ValueBlocks {
     -webkit-column-width: 21.5em;
     -moz-column-width: 21.5em;
@@ -538,6 +534,6 @@ input[type="time"]::-webkit-clear-button, input[type="time"]::-webkit-inner-spin
     -o-column-gap: 0.75em;
     column-gap: 0.75em; }
 
-  /* line 468, APKT.scss */
+  /* line 464, APKT.scss */
   #QRCode {
     border: none; } }
