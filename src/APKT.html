@@ -17,7 +17,7 @@
   <h2>Mode</h2>
   <dl id="ModeInformation">
     <dt>Mode</dt>
-    <dd><select id="ModeSelect" data-bind="options: modes, value: mode"></select></dd>
+    <dd><span class="ShrinkInPrint"><select id="ModeSelect" data-bind="options: modes, value: mode"></select></span></dd>
   </dl>
   </div>
 
@@ -25,25 +25,25 @@
   <h2>Patient Information</h2>
   <dl id="PatientInformation">
     <dt>Age</dt>
-    <dd><input data-bind="value: age" />&nbsp;years</dd>
+    <dd><input data-bind="value: age" /><span class="Unit">years</span></dd>
     <dt>Sex</dt>
     <dd><select data-bind="options: sexes, value: sex"></select></dd>
     <dt>Height</dt>
-    <dd><input data-bind="value: height" />&nbsp;in</dd>
+    <dd><input data-bind="value: height" /><span class="Unit">in</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeActualWeight">Actual Weight</dt>
-    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><input data-bind="value: weight" />&nbsp;kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><input data-bind="value: weight" /><span class="Unit">kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeIdealWeight">Ideal Weight</dt>
-    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayIdealWeight"></span>&nbsp;kg</dd>
-    <dt class="HighlightIfDosingWeightShouldBeAdjustedWeight">Adjusted Weight</dt>
-    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayAdjustedWeight"></span>&nbsp;kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayIdealWeight"></span><span class="Unit">kg</span></dd>
+    <dt class="HighlightIfDosingWeightShouldBeAdjustedWeight">Adj<span class="HideInPrint">usted</span><span class="PrintOnly">.</span> Weight</dt>
+    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayAdjustedWeight"></span><span class="Unit">kg</span></dd>
     <dt>Dosing Weight</dt>
-    <dd><input data-bind="value: dosingWeight" />&nbsp;kg</dd>
+    <dd><input data-bind="value: dosingWeight" /><span class="Unit">kg</span></dd>
     <dt>SCr</dt>
-    <dd><input data-bind="value: serumCreatinine" />&nbsp;mg/dL</dd>
+    <dd><input data-bind="value: serumCreatinine" /><span class="Unit">mg/dL</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode">V<sub>d</sub></dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode"><input data-bind="value: inputVolumeOfDistribution" />&nbsp;L/kg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode"><input data-bind="value: inputVolumeOfDistribution" /><span class="Unit">L/kg</span></dd>
     <dt>CrCl</dt>
-    <dd><span data-bind="text: displayCreatinineClearance"></span>&nbsp;mL/min</dd>
+    <dd><span data-bind="text: displayCreatinineClearance"></span><span class="Unit">mL/min</span></dd>
   </dl>
   </div>
 
@@ -53,17 +53,17 @@
     <dt>Medication</dt>
     <dd><select data-bind="options: medications, value: medication"></select></dd>
     <dt class="HideInInitialMode">Dose</dt>
-    <dd class="HideInInitialMode"><input data-bind="value: dose" />&nbsp;mg</dd>
+    <dd class="HideInInitialMode"><input data-bind="value: dose" /><span class="Unit">mg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeActualWeight HideInInitialMode">/Actual</dt>
-    <dd class="HighlightIfDosingWeightShouldBeActualWeight HideInInitialMode"><span data-bind="text: displayDosePerWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeActualWeight HideInInitialMode"><span data-bind="text: displayDosePerWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeIdealWeight HideInInitialMode">/Ideal</dt>
-    <dd class="HighlightIfDosingWeightShouldBeIdealWeight HideInInitialMode"><span data-bind="text: displayDosePerIdealWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeIdealWeight HideInInitialMode"><span data-bind="text: displayDosePerIdealWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeAdjustedWeight HideInInitialMode">/Adjusted</dt>
-    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight HideInInitialMode"><span data-bind="text: displayDosePerAdjustedWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight HideInInitialMode"><span data-bind="text: displayDosePerAdjustedWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HideInInitialMode">/Dosing</dt>
-    <dd class="HideInInitialMode"><span data-bind="text: displayDosePerDosingWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HideInInitialMode"><span data-bind="text: displayDosePerDosingWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HideInInitialMode">Interval</dt>
-    <dd class="HideInInitialMode"><input data-bind="value: interval" />&nbsp;hours</dd>
+    <dd class="HideInInitialMode"><input data-bind="value: interval" /><span class="Unit">hours</span></dd>
     <dt class="HideInInitialMode">Start</dt>
     <dd class="HideInInitialMode"><input class="TimeInput" data-bind="value: start" required="required" /></dd>
     <dt class="HideInInitialMode">End</dt>
@@ -76,16 +76,16 @@
   <dl id="Levels">
     <dt>Trough</dt>
     <dd><input class="TimeInput" data-bind="value: troughLevelTime" required="required" /></dd>
-    <dd><input data-bind="value: troughLevelValue" />&nbsp;mcg/mL</dd>
+    <dd><input data-bind="value: troughLevelValue" /><span class="Unit">mcg/mL</span></dd>
     <dt class="HideInZaskeMode">Peak</dt>
     <dt class="HideInPeakTroughMode">C1 Random</dt>
     <dd><input class="TimeInput" data-bind="value: firstLevelTime" required="required" /></dd>
-    <dd><input data-bind="value: firstLevelValue" />&nbsp;mcg/mL</dd>
+    <dd><input data-bind="value: firstLevelValue" /><span class="Unit">mcg/mL</span></dd>
     <dt class="HideInPeakTroughMode">C2 Random</dt>
     <dd class="HideInPeakTroughMode"><input class="TimeInput" data-bind="value: secondLevelTime" required="required" /></dd>
-    <dd class="HideInPeakTroughMode"><input data-bind="value: secondLevelValue" />&nbsp;mcg/mL</dd>
-    <dt>Calculated Peak</dt>
-    <dd><span data-bind="text: displayCalculatedPeak"></span>&nbsp;mcg/mL</dd>
+    <dd class="HideInPeakTroughMode"><input data-bind="value: secondLevelValue" /><span class="Unit">mcg/mL</span></dd>
+    <dt>Calc<span class="HideInPrint">ulated</span><span class="PrintOnly">.</span> Peak</dt>
+    <dd><span data-bind="text: displayCalculatedPeak"></span><span class="Unit">mcg/mL</span></dd>
   </dl>
   </div>
 
@@ -93,13 +93,13 @@
   <h2>Pharmacokinetic Parameters</h2>
   <dl id="PharmacokineticParameters">
     <dt>K<sub>d</sub></dt>
-    <dd><span data-bind="text: displayFirstOrderDispositionRate"></span>&nbsp;hour⁻¹</dd>
+    <dd><span data-bind="text: displayFirstOrderDispositionRate"></span><span class="Unit">hour⁻¹</span></dd>
     <dt>T<sub>½</sub></dt>
-    <dd><span data-bind="text: displayHalflife"></span>&nbsp;hours</dd>
+    <dd><span data-bind="text: displayHalflife"></span><span class="Unit">hours</span></dd>
     <dt>Cl</dt>
-    <dd><span data-bind="text: displayClearance"></span>&nbsp;L/hour</dd>
+    <dd><span data-bind="text: displayClearance"></span><span class="Unit">L/hour</span></dd>
     <dt class="HideInInitialMode">V<sub>d</sub></dt>
-    <dd class="HideInInitialMode"><span data-bind="text: displayVolumeOfDistribution"></span>&nbsp;L/kg</dd>
+    <dd class="HideInInitialMode"><span data-bind="text: displayVolumeOfDistribution"></span><span class="Unit">L/kg</span></dd>
   </dl>
   </div>
 
@@ -107,35 +107,35 @@
   <h2>Dose &amp; Infusion Determination</h2>
   <dl id="DoseInfusionDetermination">
     <dt>Desired Peak</dt>
-    <dd><input data-bind="value: desiredPeak" />&nbsp;mcg/mL</dd>
+    <dd><input data-bind="value: desiredPeak" /><span class="Unit">mcg/mL</span></dd>
     <dt>Desired Trough</dt>
-    <dd><input data-bind="value: desiredTrough" />&nbsp;mcg/mL</dd>
+    <dd><input data-bind="value: desiredTrough" /><span class="Unit">mcg/mL</span></dd>
     <dt>Infusion Time</dt>
-    <dd><input data-bind="value: newInfusionDuration" />&nbsp;hours</dd>
+    <dd><input data-bind="value: newInfusionDuration" /><span class="Unit">hours</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode">Loading Dose</dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode"><span data-bind="text: displayBestLoadingDose"></span>&nbsp;mg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode"><span data-bind="text: displayBestLoadingDose"></span><span class="Unit">mg</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeActualWeight">/Actual</dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayBestLoadingDosePerWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayBestLoadingDosePerWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeIdealWeight">/Ideal</dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayBestLoadingDosePerIdealWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayBestLoadingDosePerIdealWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeAdjustedWeight">/Adjusted</dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayBestLoadingDosePerAdjustedWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayBestLoadingDosePerAdjustedWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HideInPeakTroughMode HideInZaskeMode">/Dosing</dt>
-    <dd class="HideInPeakTroughMode HideInZaskeMode"><span data-bind="text: displayBestLoadingDosePerDosingWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HideInPeakTroughMode HideInZaskeMode"><span data-bind="text: displayBestLoadingDosePerDosingWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt>Best Interval</dt>
-    <dd><span data-bind="text: displayBestInterval"></span>&nbsp;hours</dd>
+    <dd><span data-bind="text: displayBestInterval"></span><span class="Unit">hours</span></dd>
     <dt>Interval</dt>
-    <dd><input data-bind="value: newInterval" />&nbsp;hours</dd>
+    <dd><input data-bind="value: newInterval" /><span class="Unit">hours</span></dd>
     <dt>Maint<span class="HideInPrint">enance</span><span class="PrintOnly">.</span> Dose</dt>
-    <dd><span data-bind="text: displayBestMaintenanceDose"></span>&nbsp;mg</dd>
+    <dd><span data-bind="text: displayBestMaintenanceDose"></span><span class="Unit">mg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeActualWeight">/Actual</dt>
-    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayBestMaintenanceDosePerWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayBestMaintenanceDosePerWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeIdealWeight">/Ideal</dt>
-    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayBestMaintenanceDosePerIdealWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayBestMaintenanceDosePerIdealWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeAdjustedWeight">/Adjusted</dt>
-    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayBestMaintenanceDosePerAdjustedWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayBestMaintenanceDosePerAdjustedWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt>/Dosing</dt>
-    <dd><span data-bind="text: displayBestMaintenanceDosePerDosingWeight"></span>&nbsp;mg/kg</dd>
+    <dd><span data-bind="text: displayBestMaintenanceDosePerDosingWeight"></span><span class="Unit">mg/kg</span></dd>
   </dl>
   </div>
 
@@ -143,23 +143,23 @@
   <h2>Predictions</h2>
   <dl id="Predictions">
     <dt>Dose</dt>
-    <dd><input data-bind="value: hypotheticalDose" />&nbsp;mg</dd>
+    <dd><input data-bind="value: hypotheticalDose" /><span class="Unit">mg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeActualWeight">/Actual</dt>
-    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayHypotheticalDosePerWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeActualWeight"><span data-bind="text: displayHypotheticalDosePerWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeIdealWeight">/Ideal</dt>
-    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayHypotheticalDosePerIdealWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeIdealWeight"><span data-bind="text: displayHypotheticalDosePerIdealWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt class="HighlightIfDosingWeightShouldBeAdjustedWeight">/Adjusted</dt>
-    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayHypotheticalDosePerAdjustedWeight"></span>&nbsp;mg/kg</dd>
+    <dd class="HighlightIfDosingWeightShouldBeAdjustedWeight"><span data-bind="text: displayHypotheticalDosePerAdjustedWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt>/Dosing</dt>
-    <dd><span data-bind="text: displayHypotheticalDosePerDosingWeight"></span>&nbsp;mg/kg</dd>
+    <dd><span data-bind="text: displayHypotheticalDosePerDosingWeight"></span><span class="Unit">mg/kg</span></dd>
     <dt>Interval</dt>
-    <dd><input data-bind="value: hypotheticalInterval" />&nbsp;hours</dd>
+    <dd><input data-bind="value: hypotheticalInterval" /><span class="Unit">hours</span></dd>
     <dt>Peak</dt>
-    <dd><span data-bind="text: displayPredictedPeak"></span>&nbsp;mcg/mL</dd>
+    <dd><span data-bind="text: displayPredictedPeak"></span><span class="Unit">mcg/mL</span></dd>
     <dt>Trough</dt>
-    <dd><span data-bind="text: displayPredictedTrough"></span>&nbsp;mcg/mL</dd>
+    <dd><span data-bind="text: displayPredictedTrough"></span><span class="Unit">mcg/mL</span></dd>
     <dt>Time level &lt; <span data-bind="text: displayLevelFloor"></span></dt>
-    <dd><span data-bind="text: displayPredictedDurationUnderLevelFloor"></span>&nbsp;hours</dd>
+    <dd><span data-bind="text: displayPredictedDurationUnderLevelFloor"></span><span class="Unit">hours</span></dd>
   </dl>
   </div>
 

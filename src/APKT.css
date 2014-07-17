@@ -189,114 +189,118 @@ dt {
       height: 1.875em; }
 
 /* line 155, APKT.scss */
+.Unit:before {
+  content: "\00a0"; }
+
+/* line 158, APKT.scss */
 .Untouched {
   background-color: #f2a980; }
 
-/* line 159, APKT.scss */
+/* line 162, APKT.scss */
 body.InitialMode .HideInInitialMode {
   display: none; }
 
-/* line 162, APKT.scss */
+/* line 165, APKT.scss */
 body.PeakTroughMode .HideInPeakTroughMode {
   display: none; }
 
-/* line 165, APKT.scss */
+/* line 168, APKT.scss */
 body.ZaskeMode .HideInZaskeMode {
   display: none; }
 
-/* line 169, APKT.scss */
+/* line 172, APKT.scss */
 .HighlightIfDosingWeightShouldBeActualWeight, .HighlightIfDosingWeightShouldBeIdealWeight, .HighlightIfDosingWeightShouldBeAdjustedWeight {
   color: rgba(0, 34, 180, 0.5); }
-  /* line 171, APKT.scss */
+  /* line 174, APKT.scss */
   .HighlightIfDosingWeightShouldBeActualWeight span, .HighlightIfDosingWeightShouldBeIdealWeight span, .HighlightIfDosingWeightShouldBeAdjustedWeight span {
     color: rgba(0, 34, 180, 0.5); }
 
-/* line 177, APKT.scss */
+/* line 180, APKT.scss */
 body.DosingWeightShouldBeActualWeight .HighlightIfDosingWeightShouldBeActualWeight,
 body.DosingWeightShouldBeIdealWeight .HighlightIfDosingWeightShouldBeIdealWeight,
 body.DosingWeightShouldBeAdjustedWeight .HighlightIfDosingWeightShouldBeAdjustedWeight {
   color: #0022b4; }
-  /* line 179, APKT.scss */
+  /* line 182, APKT.scss */
   body.DosingWeightShouldBeActualWeight .HighlightIfDosingWeightShouldBeActualWeight span,
   body.DosingWeightShouldBeIdealWeight .HighlightIfDosingWeightShouldBeIdealWeight span,
   body.DosingWeightShouldBeAdjustedWeight .HighlightIfDosingWeightShouldBeAdjustedWeight span {
     color: #0022b4; }
 
-/* line 185, APKT.scss */
+/* line 188, APKT.scss */
 body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWeight,
 body.DosingWeightShouldBeIdealWeight dt.HighlightIfDosingWeightShouldBeIdealWeight,
 body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjustedWeight {
   font-weight: bold; }
 
-/* line 189, APKT.scss */
+/* line 192, APKT.scss */
 .ui-datepicker {
   background: white;
   border-color: #0022b4;
   width: 20em;
   min-width: 50%;
   max-width: 95%; }
-  /* line 195, APKT.scss */
+  /* line 198, APKT.scss */
   .ui-datepicker dl {
     overflow: hidden;
     *zoom: 1; }
-    /* line 197, APKT.scss */
+    /* line 200, APKT.scss */
     .ui-datepicker dl dt {
       clear: left; }
-    /* line 200, APKT.scss */
+    /* line 203, APKT.scss */
     .ui-datepicker dl dd {
       float: left;
       margin: 3px 2%;
       width: 96%; }
-  /* line 206, APKT.scss */
+  /* line 209, APKT.scss */
   .ui-datepicker .ui-slider {
     background: #ffc82d; }
-    /* line 208, APKT.scss */
+    /* line 211, APKT.scss */
     .ui-datepicker .ui-slider a {
       background: #0022b4;
       border-color: rgba(0, 34, 180, 0.5); }
-  /* line 213, APKT.scss */
+  /* line 216, APKT.scss */
   .ui-datepicker .ui-widget-header {
     border: none; }
-  /* line 216, APKT.scss */
+  /* line 219, APKT.scss */
   .ui-datepicker .ui-widget-content {
     border-color: #0022b4; }
-  /* line 219, APKT.scss */
+  /* line 222, APKT.scss */
   .ui-datepicker .ui-datepicker-buttonpane {
     border: none;
     margin: 0; }
-    /* line 222, APKT.scss */
+    /* line 225, APKT.scss */
     .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
       display: none; }
-    /* line 225, APKT.scss */
+    /* line 228, APKT.scss */
     .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
       color: #0022b4; }
-  /* line 229, APKT.scss */
+  /* line 232, APKT.scss */
   .ui-datepicker .ui-tpicker-grid-label td {
     font-size: 75%; }
-  /* line 232, APKT.scss */
+  /* line 235, APKT.scss */
   .ui-datepicker .ui-slider .ui-slider-handle {
     width: 4px;
     margin-left: -2px; }
 
-/* line 239, APKT.scss */
+/* line 242, APKT.scss */
 #QRCode {
   text-align: center; }
-  /* line 241, APKT.scss */
+  /* line 244, APKT.scss */
   #QRCode *:only-child {
     margin: 1.5em auto; }
 
-/* line 245, APKT.scss */
+/* line 248, APKT.scss */
 #Disclaimers {
   background: white; }
-  /* line 247, APKT.scss */
+  /* line 250, APKT.scss */
   #Disclaimers p {
     color: rgba(0, 34, 180, 0.5); }
-  /* line 250, APKT.scss */
+  /* line 253, APKT.scss */
   #Disclaimers .DisclaimerEmphasis {
     color: #a55121; }
 
 @media only screen {
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h1 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -304,7 +308,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h2 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -312,7 +316,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h3 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -320,7 +324,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h4 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -328,7 +332,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h5 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -336,7 +340,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 257, APKT.scss */
+  /* line 260, APKT.scss */
   h6 {
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
@@ -344,7 +348,7 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 0.25em;
     border-radius: 0.25em; }
 
-  /* line 262, APKT.scss */
+  /* line 265, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -352,180 +356,184 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-border-radius: 1em;
     border-radius: 1em; } }
 @media screen {
-  /* line 272, APKT.scss */
+  /* line 275, APKT.scss */
   input, select, textarea {
     padding: 0.125em; }
 
-  /* line 275, APKT.scss */
+  /* line 278, APKT.scss */
   .ValueBlock {
     margin: 0 0.125em 2em;
     width: 29em; }
-    /* line 278, APKT.scss */
+    /* line 281, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       margin: 0.5em auto;
       border-width: 3px;
       padding: 0.375em;
       width: 28em; }
-    /* line 284, APKT.scss */
+    /* line 287, APKT.scss */
     .ValueBlock dt {
       margin-right: 0.75em;
       width: 8em;
       min-width: 8em; }
-    /* line 289, APKT.scss */
+    /* line 292, APKT.scss */
     .ValueBlock dd {
       margin-left: 8.75em; }
 
-  /* line 293, APKT.scss */
+  /* line 296, APKT.scss */
   #ValueBlocks {
     padding: 0 0.25em; }
 
-  /* line 296, APKT.scss */
+  /* line 299, APKT.scss */
   .InputPrint, .PrintOnly {
     display: none; } }
 @media screen and (max-width: 1479px) {
-  /* line 301, APKT.scss */
+  /* line 304, APKT.scss */
   .ValueBlock {
     margin-bottom: 1.5em;
     width: 28em; }
-    /* line 304, APKT.scss */
+    /* line 307, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       border-width: 2px;
       width: 27em; } }
 @media screen and (max-width: 1403px) {
-  /* line 315, APKT.scss */
+  /* line 318, APKT.scss */
   .ValueBlock {
     margin: 0 1% 1.25em;
     width: 47.5%; }
-    /* line 318, APKT.scss */
+    /* line 321, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       width: 100%; }
-    /* line 321, APKT.scss */
+    /* line 324, APKT.scss */
     .ValueBlock dt {
       margin-right: 2.5%;
       width: 37.5%; }
-    /* line 325, APKT.scss */
+    /* line 328, APKT.scss */
     .ValueBlock dd {
       margin-left: 40%; }
 
-  /* line 329, APKT.scss */
+  /* line 332, APKT.scss */
   #ValueBlocks {
     padding: 0 1.25% 0 0.75%; } }
 @media screen and (max-width: 939px) {
-  /* line 335, APKT.scss */
+  /* line 338, APKT.scss */
   .ValueBlock {
     margin: 0 0 1.25em;
     width: 96%; } }
 @media screen and (max-width: 719px) {
-  /* line 345, APKT.scss */
+  /* line 348, APKT.scss */
   input, select, textarea {
     padding: 0 0.125em; }
 
-  /* line 348, APKT.scss */
+  /* line 351, APKT.scss */
   .ValueBlock {
     margin: 0 0 1em; }
-    /* line 350, APKT.scss */
+    /* line 353, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       font-size: 0.75em;
       margin: 0.25em auto;
       padding: 0.5em; }
-    /* line 355, APKT.scss */
+    /* line 358, APKT.scss */
     .ValueBlock dt {
       margin-right: 2.5%;
       width: 37.5%;
       min-width: 8em;
       height: 1.96875em;
       line-height: 1.875; }
-    /* line 362, APKT.scss */
+    /* line 365, APKT.scss */
     .ValueBlock dd {
       margin-left: 40%;
       height: 1.96875em;
       line-height: 1.875; }
-      /* line 366, APKT.scss */
+      /* line 369, APKT.scss */
       .ValueBlock dd input, .ValueBlock dd select {
         height: 1.40625em; } }
 @media screen and (max-width: 639px) {
-  /* line 375, APKT.scss */
+  /* line 378, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     border-left-width: 0;
     border-right-width: 0; }
 
-  /* line 380, APKT.scss */
+  /* line 383, APKT.scss */
   #ValueBlocks {
     padding: 0 2px; } }
 @media screen and (max-width: 479px) {
-  /* line 387, APKT.scss */
+  /* line 390, APKT.scss */
   .ValueBlock dl, .ValueBlock .ValueBlockProper {
     border-width: 0; }
 
-  /* line 391, APKT.scss */
+  /* line 394, APKT.scss */
   #ValueBlocks {
     padding: 0 1px; } }
 @media screen and (max-width: 359px) {
-  /* line 399, APKT.scss */
+  /* line 402, APKT.scss */
   .ValueBlock dd select {
     font-size: 0.8em; } }
 @media print {
   @page {
     margin: 1cm; }
 
-  /* line 416, APKT.scss */
+  /* line 419, APKT.scss */
   * {
     color: black !important;
     border-color: black !important;
     background-color: white; }
 
-  /* line 421, APKT.scss */
+  /* line 424, APKT.scss */
   body, h1, h2, h3 {
     font-size: 8pt;
     background-color: white; }
 
-  /* line 425, APKT.scss */
+  /* line 428, APKT.scss */
   sub {
     vertical-align: baseline;
     position: relative;
     bottom: -0.6em;
     font-size: 62.5%; }
 
-  /* line 431, APKT.scss */
+  /* line 434, APKT.scss */
   input, select, textarea {
     display: none; }
 
-  /* line 434, APKT.scss */
+  /* line 437, APKT.scss */
   .HideInPrint, .ui-datepicker-div {
     display: none; }
 
-  /* line 437, APKT.scss */
+  /* line 440, APKT.scss */
   .InputPrint {
     display: inline;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
     border-style: solid;
     border-bottom-width: 1pt; }
 
-  /* line 448, APKT.scss */
+  /* line 451, APKT.scss */
   .ValueBlock {
     margin: 0.5em;
     width: 20.5em; }
-    /* line 451, APKT.scss */
+    /* line 454, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       background: white;
       margin: 0;
       border-width: 1pt;
       padding: 0.75em 0.5em;
       width: 20.0em; }
-    /* line 458, APKT.scss */
+    /* line 461, APKT.scss */
     .ValueBlock dt {
       margin-right: 0.5em;
       width: 7em;
       height: 16.5pt;
       line-height: 1.5; }
-    /* line 464, APKT.scss */
+    /* line 467, APKT.scss */
     .ValueBlock dd {
       margin-left: 7.5em;
       height: 16.5pt;
       line-height: 1.5; }
 
-  /* line 470, APKT.scss */
+  /* line 473, APKT.scss */
+  .ShrinkInPrint, .Unit {
+    font-size: 0.8em; }
+
+  /* line 476, APKT.scss */
   #ValueBlocks {
     -webkit-column-width: 21.5em;
     -moz-column-width: 21.5em;
@@ -538,6 +546,6 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-column-gap: 0.75em;
     column-gap: 0.75em; }
 
-  /* line 474, APKT.scss */
+  /* line 480, APKT.scss */
   #QRCode {
     border: none; } }

@@ -29,6 +29,7 @@ dt{float:left;clear:left;text-align:right}
 .ValueBlock dd input{width:3em}
 .ValueBlock dd select{width:7em}
 .ValueBlock dd input,.ValueBlock dd select{height:1.875em}
+.Unit:before{content:"\00a0"}
 .Untouched{background-color:#f2a980}
 body.InitialMode .HideInInitialMode,body.PeakTroughMode .HideInPeakTroughMode,body.ZaskeMode .HideInZaskeMode{display:none}
 .HighlightIfDosingWeightShouldBeActualWeight,.HighlightIfDosingWeightShouldBeActualWeight span,.HighlightIfDosingWeightShouldBeAdjustedWeight,.HighlightIfDosingWeightShouldBeAdjustedWeight span,.HighlightIfDosingWeightShouldBeIdealWeight,.HighlightIfDosingWeightShouldBeIdealWeight span{color:rgba(0,34,180,.5)}
@@ -85,10 +86,11 @@ body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWe
 body,h1,h2,h3{font-size:8pt;background-color:#fff}
 sub{vertical-align:baseline;position:relative;bottom:-.6em;font-size:62.5%}
 .HideInPrint,.ui-datepicker-div,input,select,textarea{display:none}
-.InputPrint{display:inline;padding-left:.5em;padding-right:.5em;border-style:solid;border-bottom-width:1pt}
+.InputPrint{display:inline;padding-left:.25em;padding-right:.25em;border-style:solid;border-bottom-width:1pt}
 .ValueBlock{margin:.5em;width:20.5em}
 .ValueBlock .ValueBlockProper,.ValueBlock dl{background:#fff;margin:0;border-width:1pt;padding:.75em .5em;width:20em}
 .ValueBlock dt{margin-right:.5em;width:7em;height:16.5pt;line-height:1.5}
 .ValueBlock dd{margin-left:7.5em;height:16.5pt;line-height:1.5}
+.ShrinkInPrint,.Unit{font-size:.8em}
 #ValueBlocks{-webkit-column-width:21.5em;-moz-column-width:21.5em;-ms-column-width:21.5em;-o-column-width:21.5em;column-width:21.5em;-webkit-column-gap:.75em;-moz-column-gap:.75em;-ms-column-gap:.75em;-o-column-gap:.75em;column-gap:.75em}
 #QRCode{border:none}}

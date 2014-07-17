@@ -152,6 +152,9 @@ dt {
     }
   }
 }
+.Unit:before {
+  content: "\00a0"; // &nbsp;
+}
 .Untouched {
   background-color: $color-warn;
 }
@@ -437,8 +440,8 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
   .InputPrint {
     display: inline;
     padding: {
-      left: 0.5em;
-      right: 0.5em;
+      left: 0.25em;
+      right: 0.25em;
     }
     border: {
       style: solid;
@@ -466,6 +469,9 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
       height: 1.375*$line-height-value;
       line-height: $line-height-scalar;
     }
+  }
+  .ShrinkInPrint, .Unit {
+    font-size: 0.8em;
   }
   #ValueBlocks {
     @include column-width(21.5em);
