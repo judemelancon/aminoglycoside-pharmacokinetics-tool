@@ -142,10 +142,10 @@ dt {
       background-color: rgba(255, 0, 0, 0.125);
     }
     input {
-      width: 5em;
+      width: 3em;
     }
     select {
-      width: 7.5em;
+      width: 7em;
     }
     input, select {
       height: 1.25*$line-height-value;
@@ -390,6 +390,16 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     }
     #ValueBlocks {
       padding: 0 1px;
+    }
+  }
+  
+  @media (max-width: 359px) {
+    .ValueBlock {
+      dd {
+        select {
+          font-size: 0.8em;
+        }
+      }
     }
   }
 }

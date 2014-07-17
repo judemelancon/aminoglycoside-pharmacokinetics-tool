@@ -180,10 +180,10 @@ dt {
     font-size: 1.5em; }
     /* line 144, APKT.scss */
     .ValueBlock dd input {
-      width: 5em; }
+      width: 3em; }
     /* line 147, APKT.scss */
     .ValueBlock dd select {
-      width: 7.5em; }
+      width: 7em; }
     /* line 150, APKT.scss */
     .ValueBlock dd input, .ValueBlock dd select {
       height: 1.875em; }
@@ -460,37 +460,41 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
   /* line 391, APKT.scss */
   #ValueBlocks {
     padding: 0 1px; } }
+@media screen and (max-width: 359px) {
+  /* line 399, APKT.scss */
+  .ValueBlock dd select {
+    font-size: 0.8em; } }
 @media print {
   @page {
     margin: 1cm; }
 
-  /* line 406, APKT.scss */
+  /* line 416, APKT.scss */
   * {
     color: black !important;
     border-color: black !important;
     background-color: white; }
 
-  /* line 411, APKT.scss */
+  /* line 421, APKT.scss */
   body, h1, h2, h3 {
     font-size: 8pt;
     background-color: white; }
 
-  /* line 415, APKT.scss */
+  /* line 425, APKT.scss */
   sub {
     vertical-align: baseline;
     position: relative;
     bottom: -0.6em;
     font-size: 62.5%; }
 
-  /* line 421, APKT.scss */
+  /* line 431, APKT.scss */
   input, select, textarea {
     display: none; }
 
-  /* line 424, APKT.scss */
+  /* line 434, APKT.scss */
   .HideInPrint, .ui-datepicker-div {
     display: none; }
 
-  /* line 427, APKT.scss */
+  /* line 437, APKT.scss */
   .InputPrint {
     display: inline;
     padding-left: 0.5em;
@@ -498,30 +502,30 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     border-style: solid;
     border-bottom-width: 1pt; }
 
-  /* line 438, APKT.scss */
+  /* line 448, APKT.scss */
   .ValueBlock {
     margin: 0.5em;
     width: 20.5em; }
-    /* line 441, APKT.scss */
+    /* line 451, APKT.scss */
     .ValueBlock dl, .ValueBlock .ValueBlockProper {
       background: white;
       margin: 0;
       border-width: 1pt;
       padding: 0.75em 0.5em;
       width: 20.0em; }
-    /* line 448, APKT.scss */
+    /* line 458, APKT.scss */
     .ValueBlock dt {
       margin-right: 0.5em;
       width: 7em;
       height: 16.5pt;
       line-height: 1.5; }
-    /* line 454, APKT.scss */
+    /* line 464, APKT.scss */
     .ValueBlock dd {
       margin-left: 7.5em;
       height: 16.5pt;
       line-height: 1.5; }
 
-  /* line 460, APKT.scss */
+  /* line 470, APKT.scss */
   #ValueBlocks {
     -webkit-column-width: 21.5em;
     -moz-column-width: 21.5em;
@@ -534,6 +538,6 @@ body.DosingWeightShouldBeAdjustedWeight dt.HighlightIfDosingWeightShouldBeAdjust
     -o-column-gap: 0.75em;
     column-gap: 0.75em; }
 
-  /* line 464, APKT.scss */
+  /* line 474, APKT.scss */
   #QRCode {
     border: none; } }

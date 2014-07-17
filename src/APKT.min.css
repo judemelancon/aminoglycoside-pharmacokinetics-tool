@@ -26,8 +26,8 @@ dt{float:left;clear:left;text-align:right}
 .ValueBlock dt{height:3em;line-height:3;font-size:1.5em}
 .ValueBlock dt::after{content:":"}
 .ValueBlock dd{height:3em;line-height:3;font-size:1.5em}
-.ValueBlock dd input{width:5em}
-.ValueBlock dd select{width:7.5em}
+.ValueBlock dd input{width:3em}
+.ValueBlock dd select{width:7em}
 .ValueBlock dd input,.ValueBlock dd select{height:1.875em}
 .Untouched{background-color:#f2a980}
 body.InitialMode .HideInInitialMode,body.PeakTroughMode .HideInPeakTroughMode,body.ZaskeMode .HideInZaskeMode{display:none}
@@ -79,6 +79,7 @@ body.DosingWeightShouldBeActualWeight dt.HighlightIfDosingWeightShouldBeActualWe
 #ValueBlocks{padding:0 2px}}
 @media screen and (max-width:479px){.ValueBlock .ValueBlockProper,.ValueBlock dl{border-width:0}
 #ValueBlocks{padding:0 1px}}
+@media screen and (max-width:359px){.ValueBlock dd select{font-size:.8em}}
 @media print{@page{margin:1cm}
 *{color:#000!important;border-color:#000!important;background-color:#fff}
 body,h1,h2,h3{font-size:8pt;background-color:#fff}
