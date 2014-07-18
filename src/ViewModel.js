@@ -195,6 +195,11 @@ function AminoglycosidePharmacokineticsViewModel() {
          * Math.exp(self.firstOrderDispositionRate()*hoursBetween(self.end,self.firstLevelTime));
   });
   this.displayCalculatedPeak = this.calculatedPeak.extend({numericGet: levelDigits});
+  this.calculatedTrough = ko.computed(function(){
+    return self.calculatedPeak()
+         * Math.exp( -self.firstOrderDispositionRate() * (self.interval() - hoursBetween(self.start,self.end)) );
+  });
+  this.displayCalculatedTrough = this.calculatedTrough.extend({numericGet: levelDigits});
 
   // dose & infusion determination inputs and computed
   this.desiredPeak = ko.observable(30).extend({numericSet: levelDigits});
