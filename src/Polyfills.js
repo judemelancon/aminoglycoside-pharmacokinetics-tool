@@ -48,15 +48,10 @@
     };
   }
   if(!String.prototype.startsWith) { // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-    Object.defineProperty(String.prototype, 'startsWith', {
-      enumerable: false,
-      configurable: false,
-      writable: false,
-      value: function (searchString, position) {
+    String.prototype.startsWith = function (searchString, position) {
         position = position || 0;
         return this.indexOf(searchString, position) === position;
-      }
-    });
+    };
   }
   if (!String.prototype.trim) { // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
     String.prototype.trim = function () {
