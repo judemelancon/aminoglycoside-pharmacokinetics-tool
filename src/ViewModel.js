@@ -395,12 +395,12 @@ function AminoglycosidePharmacokineticsViewModel() {
       write: function(updatedValue){
         var cleanValue = updatedValue.startsWith('#') ? updatedValue.substr(1) : updatedValue;
         var hashParts = cleanValue.split(partSeparator);
-        if(hashParts.length == 1 && hashParts[0].length == 0 )
+        if(1 == hashParts.length && 0 == hashParts[0].length)
           return;
-        for(var hashPartIndex in hashParts) {
+        for(var hashPartIndex = 0; hashPartIndex < hashParts.length; ++hashPartIndex) {
           var hashPart = hashParts[hashPartIndex];
           var hashPartParts = hashPart.split(keyValueSeparator);
-          if(hashPartParts.length == 2) {
+          if(2 == hashPartParts.length) {
             var key = abbreviationsInverted[hashPartParts[0]] || hashPartParts[0];
             var value = abbreviationsInverted[hashPartParts[1]] || hashPartParts[1];
             self[key](value);
