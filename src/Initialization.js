@@ -1,5 +1,9 @@
 // Licensing details are in the source of the HTML file.
 $(document).ready(function() {
+  var canvasSupported = (function(canvasElement){
+                           return !!(canvasElement.getContext && canvasElement.getContext('2d'));
+                         })(document.createElement('canvas'));
+
   $('input, select, textarea').after(function(){
                                        var dataBindValue = $(this).attr('data-bind')
                                                                   .replace('value', 'text')
@@ -18,6 +22,7 @@ $(document).ready(function() {
                              hasher.changed.active = true;
                              $('#QRCode').empty()
                                          .qrcode({
+                                                    render: canvasSupported ? 'canvas' : 'table',
                                                     width: 200,
                                                     height: 200,
                                                     text: window.location.href
